@@ -79,6 +79,9 @@ footer{padding:28px 0;text-align:center;color:var(--muted);font-size:.9rem}
 .rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
 .rv.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.photo{animation:none}.rv{opacity:1;transform:none;transition:none}}
+.letter{max-width:800px;margin:0 auto;padding:44px 48px}
+.letter p{font-size:1.02rem;line-height:1.8;margin:0 0 18px}
+@media(max-width:800px){.letter{padding:28px 24px}}
 </style>
 </head>
 <body>
@@ -86,7 +89,7 @@ footer{padding:28px 0;text-align:center;color:var(--muted);font-size:.9rem}
 <nav><div class="wrap">
   <button class="burger" aria-label="Menu" onclick="document.getElementById('m').classList.toggle('open')"><i></i><i></i><i></i></button>
   <div class="menu" id="m">
-    <a class="l" href="#works">Works</a><a class="l" href="#skills">Skills</a><a class="l" href="#experience">Experience</a><a class="l" href="#contact">Contact</a>
+    <a class="l" href="#works">Works</a><a class="l" href="#skills">Skills</a><a class="l" href="#experience">Experience</a><a class="l" href="#cover-letter">Cover Letter</a><a class="l" href="#contact">Contact</a>
   </div>
 </div></nav>
 
@@ -94,7 +97,7 @@ footer{padding:28px 0;text-align:center;color:var(--muted);font-size:.9rem}
   <div>
     <h1>Hi, I am Pranav,<br>Data Analyst &amp; Automation Specialist</h1>
     <p>I turn operational data into measurable business results: machine learning forecasts, automated workflows, interactive dashboards and AI applications. I have led teams of 100+ while meeting client SLAs and quality standards.</p>
-    <a class="btn" href="resume.pdf">Download Resume</a><a class="btn ghost" href="https://github.com/pranavghimire05-cpu" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="resume.pdf">Download Resume</a><a class="btn ghost" href="cover-letter.pdf" download>Download Cover Letter</a><a class="btn ghost" href="https://github.com/pranavghimire05-cpu" target="_blank" rel="noopener">GitHub</a>
   </div>
   <div class="photo" id="ph">
     <img src="photo.jpg" alt="Pranav Raj Ghimire" onerror="this.style.display='none';document.getElementById('ph').classList.add('noimg')">
@@ -204,7 +207,25 @@ footer{padding:28px 0;text-align:center;color:var(--muted);font-size:.9rem}
   <p style="color:var(--muted);margin-top:28px"><b style="color:var(--navy)">Education:</b> BSc Microbiology, KIST College of Management (Tribhuvan University), 2019–2025. <b style="color:var(--navy)">Languages:</b> Nepali (native), English (advanced).</p>
 </div></section>
 
-<section class="band contact" id="contact"><div class="wrap">
+<section class="band" id="cover-letter"><div class="wrap">
+  <div class="head"><h2>Cover Letter</h2></div>
+  <div class="card letter">
+    <p>Dear Hiring Manager,</p>
+    <p>I am writing to express my interest in data analytics, machine learning and automation roles. I bring a practical mix of technical and analytical skills that I use to turn operational data into clear decisions.</p>
+    <p><b>Programming and data analysis:</b> Python, pandas, NumPy, SQL and PostgreSQL for cleaning, validating and analyzing data, including exploratory data analysis, trend analysis and data quality assurance.</p>
+    <p><b>Machine learning:</b> scikit-learn and XGBoost for predictive modelling and forecasting, applied to workload forecasting and capacity planning.</p>
+    <p><b>Dashboards and reporting:</b> Plotly, Streamlit, Google Sheets and dashboard development to deliver performance metrics, trend analysis and stakeholder reporting.</p>
+    <p><b>Automation:</b> Google Apps Script and reporting automation to replace manual processes and improve accuracy and efficiency.</p>
+    <p><b>Data engineering, APIs and AI:</b> FastAPI, Flask, REST APIs, SQLAlchemy and Alembic, along with LangChain and Retrieval-Augmented Generation (RAG) for LLM-powered applications.</p>
+    <p><b>Development tools:</b> Git, JavaScript, HTML, CSS and React.</p>
+    <p><b>Professional skills:</b> Team leadership, performance and capacity analysis, SLA and quality management, and clear communication with clients and stakeholders.</p>
+    <p>I would welcome the chance to discuss how these skills can support your team. Thank you for your time and consideration.</p>
+    <p style="margin-bottom:0">Sincerely,<br><b>Pranav Raj Ghimire</b><br><a href="mailto:pranavghimire05@gmail.com">pranavghimire05@gmail.com</a></p>
+  </div>
+  <div style="text-align:center;margin-top:28px"><a class="btn" href="cover-letter.pdf" download>Download Cover Letter</a></div>
+</div></section>
+
+<section class="plain contact" id="contact"><div class="wrap">
   <div class="head" style="justify-content:center"><h2>Contact</h2></div>
   <p>Open to data analytics, machine learning and automation opportunities.</p>
   <a class="btn" href="mailto:pranavghimire05@gmail.com">Email me</a><a class="btn ghost" href="https://www.linkedin.com/in/pranav-ghimire-5a3b362a6" target="_blank" rel="noopener">LinkedIn</a>
