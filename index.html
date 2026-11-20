@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pranav Raj Ghimire | Data Analyst &amp; Automation Specialist</title>
+<meta name="description" content="Portfolio of Pranav Raj Ghimire: data analysis, machine learning, dashboards, AI applications and workflow automation.">
+<style>
+:root{--navy:#1f2542;--text:#2a3050;--muted:#5d6482;--coral:#ee6c64;--coral-d:#e0564e;--blue:#29a3d6;--band:#eff7fb;--line:#e1ecf2;color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Roboto,system-ui,-apple-system,"Segoe UI",sans-serif;background:#fff;color:var(--text);line-height:1.7}
+a{color:var(--blue)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 28px}
+nav{position:relative}
+nav .wrap{display:flex;justify-content:flex-end;align-items:center;height:80px}
+.menu{display:contents}
+nav a.l{margin-left:36px;text-decoration:none;color:var(--navy);font-weight:600;font-size:1.05rem}
+nav a.l:hover{color:var(--coral)}
+.burger{display:none;background:none;border:0;cursor:pointer;padding:8px}
+.burger i{display:block;width:28px;height:2px;background:var(--navy);margin:6px 0}
+.hero{padding:40px 0 90px}
+.hero .wrap{display:flex;align-items:center;justify-content:space-between;gap:48px}
+.hero h1{font-size:clamp(2rem,4.6vw,3rem);line-height:1.25;margin:0 0 22px;color:var(--navy)}
+.hero p{max-width:540px;color:var(--text);margin:0 0 30px}
+.btn{display:inline-block;background:var(--coral);color:#fff;text-decoration:none;font-weight:600;padding:14px 28px;transition:background .2s}
+.btn:hover{background:var(--coral-d)}
+.btn.ghost{background:#fff;color:var(--coral);border:2px solid var(--coral);padding:12px 26px;margin-left:10px}
+.btn.ghost:hover{background:var(--coral);color:#fff}
+.photo{flex:0 0 300px;height:300px;border-radius:50%;background:var(--band);padding:8px;box-shadow:0 8px 30px rgba(31,37,66,.08);overflow:hidden;position:relative}
+.photo img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
+.photo .ini{display:none;position:absolute;inset:8px;border-radius:50%;background:linear-gradient(135deg,#cfe9f5,#fbd9d6);align-items:center;justify-content:center;font-size:4rem;font-weight:700;color:var(--navy)}
+.photo.noimg .ini{display:flex}
+section.band{background:var(--band);padding:64px 0}
+section.plain{padding:64px 0}
+.head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:26px}
+.head h2{margin:0;font-size:1.45rem;font-weight:400;color:var(--navy)}
+.head a{text-decoration:none;font-size:.95rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px}
+.card{background:#fff;padding:32px;box-shadow:0 4px 18px rgba(31,37,66,.05);display:flex;flex-direction:column}
+.card h3{margin:0 0 20px;font-size:1.3rem;line-height:1.35;color:var(--navy)}
+.meta{display:flex;gap:14px;margin-bottom:18px;font-size:.95rem;color:var(--text)}
+.meta span+span{border-left:2px solid #c9d3dc;padding-left:14px}
+.card p{margin:0 0 12px;font-size:.95rem;color:var(--text)}
+.card .more{margin-top:auto;padding-top:8px;text-decoration:none;font-weight:600;font-size:.95rem}
+.card .more:hover{text-decoration:underline}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px}
+.stat{background:#fff;padding:24px;box-shadow:0 4px 18px rgba(31,37,66,.05);text-align:center}
+.stat b{display:block;font-size:1.8rem;color:var(--coral);line-height:1.2}
+.stat span{font-size:.88rem;color:var(--muted)}
+.skill h3{font-size:1.05rem;margin:0 0 10px}
+.skill p{margin:0;color:var(--muted)}
+.job{background:#fff;padding:26px 30px;margin-bottom:22px;box-shadow:0 4px 18px rgba(31,37,66,.05)}
+.job h3{margin:0;font-size:1.15rem;color:var(--navy)}
+.job .meta{margin:4px 0 10px;color:var(--muted)}
+.job ul{margin:0;padding-left:20px;font-size:.95rem}
+.job li{margin-bottom:6px}
+.contact{text-align:center}
+.contact p{max-width:520px;margin:0 auto 26px}
+footer{padding:28px 0;text-align:center;color:var(--muted);font-size:.9rem}
+@media(max-width:800px){
+ .burger{display:block}
+ nav .wrap{justify-content:flex-end}
+ nav .menu{display:none!important;position:absolute;top:70px;left:0;right:0;background:#fff;box-shadow:0 8px 20px rgba(31,37,66,.08);flex-direction:column;padding:12px 28px;z-index:5}
+ nav .menu.open{display:flex!important}
+ nav a.l{margin:0;padding:10px 0}
+ .hero .wrap{flex-direction:column-reverse;text-align:center;gap:32px}
+ .hero p{margin-left:auto;margin-right:auto}
+ .photo{flex-basis:auto;width:240px;height:240px}
+ .btn.ghost{margin:10px 0 0}
+}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <button class="burger" aria-label="Menu" onclick="document.getElementById('m').classList.toggle('open')"><i></i><i></i><i></i></button>
+  <div class="menu" id="m">
+    <a class="l" href="#works">Works</a><a class="l" href="#skills">Skills</a><a class="l" href="#experience">Experience</a><a class="l" href="#contact">Contact</a>
+  </div>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div>
+    <h1>Hi, I am Pranav,<br>Data Analyst &amp; Automation Specialist</h1>
+    <p>I turn operational data into measurable business results: machine learning forecasts, automated workflows, interactive dashboards and AI applications. I have led teams of 100+ while meeting client SLAs and quality standards.</p>
+    <a class="btn" href="resume.pdf">Download Resume</a><a class="btn ghost" href="https://github.com/pranavghimire05-cpu" target="_blank" rel="noopener">GitHub</a>
+  </div>
+  <div class="photo" id="ph">
+    <img src="photo.jpg" alt="Pranav Raj Ghimire" onerror="this.style.display='none';document.getElementById('ph').classList.add('noimg')">
+    <div class="ini">PG</div>
+  </div>
+</div></header>
+
+<section class="band" id="works"><div class="wrap">
+  <div class="head"><h2>Works</h2><a href="https://github.com/pranavghimire05-cpu" target="_blank" rel="noopener">View all</a></div>
+  <div class="grid">
+    <div class="card">
+      <h3>Volume Forecast Tool</h3>
+      <div class="meta"><span>06/2025 – 07/2026</span><span>Machine Learning, Forecasting</span></div>
+      <p><b>Problem:</b> Teams struggled to match staffing to incoming work, risking SLA breaches or wasted resources.</p>
+      <p><b>Approach:</b> An end-to-end ML solution that forecasts incoming volume and estimates the capacity needed.</p>
+      <p><b>Impact:</b> 96% accuracy on monthly forecasts, enabling staffing plans ahead of demand.</p>
+      <a class="more" href="https://github.com/pranavghimire05-cpu/volume-forecast" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+    <div class="card">
+      <h3>RAG Question Answering System</h3>
+      <div class="meta"><span>07/2025</span><span>RAG, LangChain, LLMs</span></div>
+      <p>Upload large PDFs and ask questions in natural language. Text extraction, chunking, embeddings and semantic search feed an LLM that answers from the document.</p>
+      <p>Built to give grounded answers and minimize hallucinated responses.</p>
+      <a class="more" href="https://github.com/pranavghimire05-cpu/rag-qa-system" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+    <div class="card">
+      <h3>AI Consultancy Chatbot</h3>
+      <div class="meta"><span>07/2025</span><span>Conversational AI, LLMs</span></div>
+      <p>A study-abroad assistant covering university applications, admission requirements, visa documentation and country-specific procedures.</p>
+      <p>Also helps students plan tuition, living expenses and budgets.</p>
+      <a class="more" href="https://github.com/pranavghimire05-cpu/AI-Consultancy" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+  </div>
+</div></section>
+
+<section class="plain"><div class="wrap">
+  <div class="head"><h2>Impact</h2></div>
+  <div class="stats">
+    <div class="stat"><b>96%</b><span>monthly forecast accuracy</span></div>
+    <div class="stat"><b>500+</b><span>members' capacity planning automated</span></div>
+    <div class="stat"><b>60→85%+</b><span>team productivity after SLA revisions</span></div>
+    <div class="stat"><b>87.5%</b><span>faster response (2 hrs to 15 min)</span></div>
+    <div class="stat"><b>~2 min</b><span>payroll, down from days</span></div>
+    <div class="stat"><b>100+</b><span>team members led, 3 countries</span></div>
+  </div>
+</div></section>
+
+<section class="band" id="skills"><div class="wrap">
+  <div class="head"><h2>Skills</h2></div>
+  <div class="grid">
+    <div class="card skill"><h3>Data Analysis &amp; Programming</h3><p>Python, pandas, NumPy, SQL, PostgreSQL</p></div>
+    <div class="card skill"><h3>Machine Learning</h3><p>scikit-learn, XGBoost, predictive modelling, forecasting</p></div>
+    <div class="card skill"><h3>Dashboards &amp; Visualisation</h3><p>Plotly, Streamlit, dashboard development, data reporting</p></div>
+    <div class="card skill"><h3>Automation &amp; Reporting</h3><p>Google Apps Script, Google Sheets, reporting automation</p></div>
+    <div class="card skill"><h3>Data Engineering &amp; APIs</h3><p>FastAPI, Flask, REST APIs, SQLAlchemy, Alembic</p></div>
+    <div class="card skill"><h3>AI Tools</h3><p>LangChain, Retrieval-Augmented Generation (RAG), LLM tools</p></div>
+    <div class="card skill"><h3>Analytical Skills</h3><p>EDA, data cleaning and validation, trend analysis, data quality, capacity forecasting, performance analysis, stakeholder reporting</p></div>
+    <div class="card skill"><h3>Development Tools</h3><p>Git, JavaScript, HTML, CSS, React</p></div>
+  </div>
+</div></section>
+
+<section class="plain" id="experience"><div class="wrap">
+  <div class="head"><h2>Experience</h2></div>
+  <div class="job" style="box-shadow:none;border:1px solid var(--line)">
+    <h3>Subject Matter Expert, Automation &amp; Process Transformation</h3>
+    <div class="meta"><span>CloudFactory</span><span>06/2026 – Present</span></div>
+    <ul>
+      <li>Built an ML model forecasting monthly work volume at 96% accuracy, giving teams earlier visibility for staffing.</li>
+      <li>Automated capacity planning for 500+ members from forecasted workload, availability, attendance and allocation.</li>
+      <li>Analyzed performance, productivity and quality data to recommend SLA revisions that lifted productivity from about 60% to over 85%.</li>
+      <li>Built Apps Script tracking tools and interactive dashboards with metrics and trend analysis for team leads.</li>
+      <li>Created automated flagging for performance concerns and a payroll system that cut processing from days to about 2 minutes.</li>
+    </ul>
+  </div>
+  <div class="job" style="box-shadow:none;border:1px solid var(--line)">
+    <h3>Team Captain</h3>
+    <div class="meta"><span>CloudFactory</span><span>01/2024 – 06/2025</span></div>
+    <ul>
+      <li>Led daily operations for about 100 members, including task allocation and workflow management.</li>
+      <li>Cut task response time from 2 hours to 15 minutes (87.5%) while keeping SLAs and quality.</li>
+      <li>Produced daily performance reports on productivity, quality and SLA compliance.</li>
+      <li>Coordinated remote training across Nepal, Kenya and Colombia and served as the main client contact.</li>
+    </ul>
+  </div>
+  <div class="job" style="box-shadow:none;border:1px solid var(--line)">
+    <h3>3D Roof Geometry Analyst</h3>
+    <div class="meta"><span>CloudFactory</span><span>03/2023 – 12/2024</span></div>
+    <ul>
+      <li>Ran quality checks against client specifications and met the client's SLA within the first 2 months.</li>
+    </ul>
+  </div>
+  <div class="job" style="box-shadow:none;border:1px solid var(--line)">
+    <h3>Data Analyst, Diamond &amp; Jewellery Operations</h3>
+    <div class="meta"><span>MMK Jewellers</span><span>02/2022 – 01/2024</span></div>
+    <ul>
+      <li>Cleaned, validated and organised large datasets, and used spreadsheet automation to reduce manual work.</li>
+      <li>Resolved data discrepancies and ran quality checks on product images and specifications.</li>
+    </ul>
+  </div>
+  <div class="job" style="box-shadow:none;border:1px solid var(--line)">
+    <h3>Diamond Data Clerk</h3>
+    <div class="meta"><span>MMK Jewellers</span><span>01/2020 – 01/2022</span></div>
+    <ul>
+      <li>Entered and verified diamond data against source documents, keeping structured records for retrieval and reporting.</li>
+    </ul>
+  </div>
+  <p style="color:var(--muted);margin-top:28px"><b style="color:var(--navy)">Education:</b> BSc Microbiology, KIST College of Management (Tribhuvan University), 2019–2025. <b style="color:var(--navy)">Languages:</b> Nepali (native), English (advanced).</p>
+</div></section>
+
+<section class="band contact" id="contact"><div class="wrap">
+  <div class="head" style="justify-content:center"><h2>Contact</h2></div>
+  <p>Open to data analytics, machine learning and automation opportunities.</p>
+  <a class="btn" href="mailto:pranavghimire05@gmail.com">Email me</a><a class="btn ghost" href="https://www.linkedin.com/in/pranav-ghimire-5a3b362a6" target="_blank" rel="noopener">LinkedIn</a>
+</div></section>
+
+<footer>&copy; 2026 Pranav Raj Ghimire</footer>
+</body>
+</html>
